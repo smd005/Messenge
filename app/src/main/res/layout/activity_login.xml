@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="smd.messenge.Login">
+
+    <TextView android:text="@string/greeting" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="#3104ff"
+        android:textSize="@dimen/Welcome_vertical_margin" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/username_hint"
+        android:ems="10"
+        android:id="@+id/usernameEntry"
+        android_layout_below="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android_layout_below="@+id/usernameEntry"
+        android:id="@+id/passwordEntry"
+        android:hint="@string/password_hint"
+        android:layout_below="@+id/usernameEntry"
+        android:layout_alignParentStart="true" />
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stay logged in"
+        android:id="@+id/stay_logged_in"
+        android:layout_below="@+id/passwordEntry"
+        android:layout_alignParentStart="true"
+        android:onClick="checkBoxChecked"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/button"
+        android:layout_below="@+id/stay_logged_in"
+        android:layout_alignParentStart="true"
+        android:onClick="loginButton"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create new account"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:onClick="createAccountButton"/>
+
+</RelativeLayout>

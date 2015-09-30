@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="stayLoggedIn"
+        android:title="Stay logged in"
+        android:summary="Keeps user logged in "
+        android:defaultValue= "false" />
+    <CheckBoxPreference
+        android:key="anonymousSend"
+        android:title="Send messages anonymously"
+        android:defaultValue= "false" />
+</PreferenceScreen>

@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="smd.messenge.Messages">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" android:showAsAction="never" />
+    <item
+        android:id="@+id/contacts_button"
+        android:title="Contacts"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_menu_cc_am"/>
+    <item
+        android:id="@+id/google_maps_button"
+        android:title="Google Maps"
+        android:showAsAction="always"
+        android:icon="@drawable/compass_base"/>
+</menu>
